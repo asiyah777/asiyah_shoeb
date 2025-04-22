@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/devcontainers/universal:2-linux
-# Install the xz-utils package
-RUN apt-get update && \
-    pip install Flask
+
+RUN apt-get update 
+RUN npm install -g @vue/cli
+RUN pip install Flask
